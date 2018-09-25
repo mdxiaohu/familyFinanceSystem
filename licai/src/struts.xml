@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userLogout" class="userAction" method="userLogout">
+             <result name="success">/qiantai/index.html</result>
+        </action>
+        <action name="userEdit" class="userAction" method="userEdit">
+        </action>
+        
+        
+        <action name="shouruAdd" class="shouruAction" method="shouruAdd">
+        </action>
+        <action name="shouruDel" class="shouruAction" method="shouruDel">
+        </action>
+        <action name="shouruMana" class="shouruAction" method="shouruMana">
+             <result name="success">/auser/shouru/shouruMana.jsp</result>
+        </action>
+        
+        
+        <action name="xiaofeiAdd" class="xiaofeiAction" method="xiaofeiAdd">
+        </action>
+        <action name="xiaofeiDel" class="xiaofeiAction" method="xiaofeiDel">
+        </action>
+        <action name="xiaofeiMana" class="xiaofeiAction" method="xiaofeiMana">
+             <result name="success">/auser/xiaofei/xiaofeiMana.jsp</result>
+        </action>
+        
+        
+        <action name="touziAdd" class="touziAction" method="touziAdd">
+        </action>
+        <action name="touziDel" class="touziAction" method="touziDel">
+        </action>
+        <action name="touziMana" class="touziAction" method="touziMana">
+             <result name="success">/auser/touzi/touziMana.jsp</result>
+        </action>
+        
+        
+        <action name="tongji_meiri" class="tongjiAction" method="tongji_meiri">
+             <result name="success">/auser/tongji/tongji_meiri.jsp</result>
+        </action>
+        <action name="tongji_meiyue" class="tongjiAction" method="tongji_meiyue">
+             <result name="success">/auser/tongji/tongji_meiyue.jsp</result>
+        </action>
+        
+        
+        <action name="rizhiAdd" class="rizhiAction" method="rizhiAdd">
+        </action>
+        <action name="rizhiDel" class="rizhiAction" method="rizhiDel">
+        </action>
+        <action name="rizhiMana" class="rizhiAction" method="rizhiMana">
+             <result name="success">/auser/rizhi/rizhiMana.jsp</result>
+        </action>
+    </package>
+</struts>
